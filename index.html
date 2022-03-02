@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="icon" href="/images/logo.png" type="image/x-icon" />
+    <meta property="og:image" content="/images/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/style-rtl.css"> -->
+    <title>Horizon | Home</title>
+</head>
+
+<body>
+
+    <!-- start header -->
+    <nav class="navbar navbar-expand-sm shadow-sm bg-white sticky-top m-0 p-1 ">
+        <div class="container">
+            <i class="fas fa-bars  fa-2x mt-2 mr-3" data-bs-toggle="offcanvas" data-bs-target="#demo"></i>
+            <a href="./index.html"> <img class="logo-navbar"
+                    src="https://tkhive.com/wp-content/uploads/2021/07/tk-01.svg" width="110" height="60"
+                    alt="image logo" loading="lazy"> </a>
+            <div class="offcanvas offcanvas-start" id="demo">
+                <div class="offcanvas-header">
+                    <h1 class="offcanvas-title"><a href="./index.html"> <img
+                                src="https://tkhive.com/wp-content/uploads/2021/07/tk-01.svg" width="110" height="60"
+                                alt="image menu" loading="lazy"></a></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body col justify-content-md-between">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#consultation">Consultation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#whyUs">Why-Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#clients">Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--end header  -->
+
+    <!-- start line border_bottom -->
+    <div class="line"></div>
+    <!-- end line border_bottom -->
+
+    <!-- start slider -->
+    <div class="big-image" id="home" style="height: 600px;">
+        <div class="overlay">
+            <p>creative ideas</p>
+            <h1>TK Hive <br> for digital solutions.</h1>
+            <span>A digital experiences that excite and inspire</span>
+        </div>
+    </div>
+    <!-- end slider -->
+
+    <!-- start about us -->
+    <div class="aboutUs" id="about">
+        <div class="aboutImg" style="height: 600px;">
+            <div class="overlay">
+                <p>about us</p>
+                <h1>develop your future.</h1>
+                <span>Tk Hive, digital creative solutions company specialized in building businesses and drive
+                    transformation by bringing together the capabilities required to assist organizations grow and
+                    thrive in the digital age.
+
+                    As a full-service company, Tk Hive strategies and solutions are tailored to help businesses build a
+                    stronger digital presence, implement efficient and innovative solutions, connect with more
+                    customers, and grow a stronger brand to achieve the maximum growth level for your organization.
+                    Tk hive, established in 2021 and aims to play a significant role in supporting of the Egyptian
+                    state's move towards digital transformation.</span>
+                <a class="modalRead" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">read
+                    more <i class="fas fa-caret-right m-2"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- end about us -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js">
+    </script>
+    <script src="/js/main.js"></script>
+
+
+
+    <!-- start modal about us -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">About Our Company</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="nav-tab mt-4">
+                        <div class="wrapper">
+                            <nav>
+                                <!-- buttons tabs -->
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <a class="nav-link active" id="nav-featured-tab" data-bs-toggle="tab"
+                                        href="#nav-featured" role="tab" aria-controls="nav-home" aria-selected="true">
+                                        who we are
+                                    </a>
+
+                                    <a class="nav-link " id="nav-latest-tab" data-bs-toggle="tab" href="#nav-latest"
+                                        role="tab" aria-controls="nav-profile" aria-selected="true">
+                                        our values
+                                    </a>
+                                </div>
+
+                                <!-- content button tabs -->
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="nav-featured" role="tabpanel"
+                                        aria-labelledby="nav-featured-tab">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6">
+                                                <img class="imgModalAbout" src="/images/about/Who_we_are-768x384-1.webp"
+                                                    alt="image about" loading="lazy">
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <p class="textModal">
+                                                    We are a team of professionals who provide a continuous delivery of
+                                                    high-quality services with constantly updating technologies,
+                                                    strategies, and knowledge.
+                                                </p>
+                                                <span style="color: var(--colorText);">Mission:</span>
+                                                <p class="textModal">
+                                                    To provide innovative digital solutions using state of art
+                                                    technologies to meet the business needs of our customers and exceed
+                                                    their expectations.
+                                                    Develop lasting and long-term growth for our customers by providing
+                                                    tailor-made solution with leading-edge technology that generate
+                                                    maximum ROI.
+                                                    To build a culture of trust, openness, collaboration, and
+                                                    accountability in our company.
+                                                </p>
+                                                <span style="color: var(--colorText);">Vision:</span>
+                                                <p class="textModal">
+                                                    Our vision is to be one of the leading digital solutions companies
+                                                    in Egypt and contribute to creating the digital economy in the MENA
+                                                    Region through facilitating the reach to the forthcoming era of
+                                                    unlimited digital possibilities.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="nav-latest" role="tabpanel"
+                                        aria-labelledby="nav-latest-tab">
+                                        <div class="row text-center">
+                                            <div class="col-12 col-md-4">
+                                                <img class="imgValueModal mb-3" src="/images/about/integrity.png"
+                                                    alt="integrity image">
+                                                <p class="m-0 p-0 colortext">Integrity</p>
+                                                <p class="mt-2  text-black">Is having the courage to make tough ethical
+                                                    decisions, being
+                                                    transparent with our team, taking pride in our work and being
+                                                    respectful of everyone</p>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                                <img class="imgValueModal mb-3" src="/images/about/Inclusion.png"
+                                                    alt="Inclusion image">
+                                                <p class="m-0 p-0 colortext">Inclusion</p>
+                                                <p class="mt-2 text-black">Is fostering a sense of belonging, providing
+                                                    equal access to
+                                                    opportunities and resources for everyone and welcoming all
+                                                    perspectives and contributions.</p>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                                <img class="imgValueModal mb-3" src="/images/about/Innovation.png"
+                                                    alt="Innovation image">
+                                                <p class="m-0 p-0 colortext">Innovation</p>
+                                                <p class="mt-2 text-black">We encourage innovation and actively look for
+                                                    ways to serve our
+                                                    customer even better.</p>
+                                            </div>
+                                        </div>
+                                        <div class="row text-center">
+                                            <div class="col-12 col-md-4">
+                                                <img class="imgValueModal mb-3" src="/images/about/Agility.png"
+                                                    alt="Agility image">
+                                                <p class="m-0 p-0 colortext">Agility</p>
+                                                <p class="mt-2  text-black">Is having the courage to make tough ethical
+                                                    decisions, being
+                                                    transparent with our team, taking pride in our work and being
+                                                    respectful of everyone</p>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                                <img class="imgValueModal mb-3" src="/images/about/Collaboration.png"
+                                                    alt="Collaboration image">
+                                                <p class="m-0 p-0 colortext">Collaboration</p>
+                                                <p class="mt-2 text-black">Is fostering a sense of belonging, providing
+                                                    equal access to
+                                                    opportunities and resources for everyone and welcoming all
+                                                    perspectives and contributions.</p>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                                <img class="imgValueModal mb-3" src="/images/about/Commitment.png"
+                                                    alt="Commitment image">
+                                                <p class="m-0 p-0 colortext">Commitment</p>
+                                                <p class="mt-2 text-black">We encourage innovation and actively look for
+                                                    ways to serve our
+                                                    customer even better.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="border-0 fw-bold bg-white pe-3 ps-3" data-bs-dismiss="modal"
+                        aria-label="Close">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
