@@ -804,6 +804,103 @@ margin-top: 15px;
 }
 /* end consulting */
 
+/* start why us */
+.whyUsImage {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("../images/whyUs/t1-min-scaled-1.webp");
+}
+
+.whyUsImage .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.55);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 30px;
+}
+
+.subCart{
+    background-color: #0b0e17;
+    width: 250px;
+    padding: 30px 20px;
+}
+
+.number{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.desc{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 31px;
+    color: #a9afc3;
+    text-transform: capitalize;
+}
+
+.cartSpace{
+    margin-left: 100px;
+}
+
+.textWhyUs{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.textLine{
+    font-size: 54px;
+    line-height: 59px;
+    font-weight: 700;
+}
+
+.smallText{
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 300;
+}
+
+.textDetails{
+    font-size: 22px;
+    line-height: 29px;
+    font-weight: 500;
+}
+
+@media (max-width:768px) {
+    .whyUsImage{
+        height: 1450px !important;
+    }
+    .carts{
+        display: block !important;
+        margin: auto;
+    }
+    .subCart{
+        background-color: #0b0e17;
+        width: 100%;
+        padding: 30px 20px;
+    }
+    .cartSpace{
+        margin-left: 0px;
+    }
+    .textLine{
+        font-size: 30px;
+        line-height: 42px;
+        font-weight: 700;
+    }
+}
+/* end why us */
+
 /* start our team */
 .ourTeamImage {
     height: 100vh;
