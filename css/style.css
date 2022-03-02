@@ -610,7 +610,7 @@ color: #212529;
     flex-direction: column;
 }
 
-.servciesImg .overlay p {
+.servciesImg .overlay .servicesText {
     font-size: 25px;
     text-transform: uppercase;
     position: absolute;
@@ -637,7 +637,7 @@ color: #212529;
     font-size: 18px;
     position: absolute;
     left: 8%;
-    top: 43%;
+    top: 39%;
     font-weight: 300;
     line-height: 33px;
     margin: 0 0 5px;
@@ -645,8 +645,29 @@ color: #212529;
     max-width: 580px;
 }
 
+.servciesImg .section{
+    margin-top: 300px;
+    height: 300px;
+}
+
+.servicesName{
+    font-size: 20px;
+    line-height: 26px;
+    color: #a9afc3;
+    font-weight: 500;
+}
+
+.linkModal{
+    color: var(--colorText);
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    cursor: pointer;
+}
+
 @media (max-width:768px) {
-    .servciesImg .overlay p {
+    .servciesImg .overlay .servicesText {
         font-size: 16px;
         text-transform: uppercase;
         position: absolute;
