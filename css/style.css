@@ -108,7 +108,7 @@ p{
     font-weight: 400;
     line-height: 20px;
     color: #707070;
-}
+} 
 
 .btn{
     border: none;
@@ -155,7 +155,14 @@ input[type=text], input[type=email],input[type=number],input[type=password],inpu
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 10px;
+    background: none;
     resize: vertical;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    outline: none;
+    color: white;
+    font-size: 16px;
 }
 
 
@@ -213,7 +220,7 @@ input[type=submit]:hover {
 }
 
 .wrapper{
-    width: 95%;
+    width: 85%;
     margin: auto;
 }
 
@@ -312,7 +319,7 @@ input[type=submit]:hover {
 /* start slider */
 .big-image {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     position: relative;
     background-size: cover;
     background-position: 50% 50%;
@@ -406,7 +413,7 @@ input[type=submit]:hover {
 /* start about */
 .aboutImg {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     position: relative;
     background-size: cover;
     background-position: 50% 50%;
@@ -578,3 +585,517 @@ color: #212529;
     }
 }
 /* end about */
+
+/* star servcies */
+.servciesImg {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("../images/services/services_bg.webp");
+}
+
+.servciesImg .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.65);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.servciesImg .overlay p {
+    font-size: 25px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 8%;
+    top: 15%;
+    font-weight: 300;
+    line-height: 70px;
+    margin: 0 0 5px;
+    color: white;
+}
+
+.servciesImg .overlay h1 {
+    font-size: 54px;
+    text-transform: capitalize;
+    position: absolute;
+    line-height: 59px;
+    left: 8%;
+    top: 27%;
+    font-weight: 700;
+    margin: 0 0 5px;
+    color: white;
+}
+.servciesImg .overlay span {
+    font-size: 18px;
+    position: absolute;
+    left: 8%;
+    top: 43%;
+    font-weight: 300;
+    line-height: 33px;
+    margin: 0 0 5px;
+    color: white;
+    max-width: 580px;
+}
+
+@media (max-width:768px) {
+    .servciesImg .overlay p {
+        font-size: 16px;
+        text-transform: uppercase;
+        position: absolute;
+        left: 8%;
+        top: 0%;
+        font-weight: 400;
+        line-height: 240px;
+        margin: 0 0 5px;
+        color: white;
+    }
+    .servciesImg .overlay h1 {
+        font-size: 30px;
+        text-transform: capitalize;
+        position: absolute;
+        left: 8%;
+        top: 25%;
+        line-height: 42px;
+        font-weight: 700;
+        margin: 0 0 5px;
+        color: white;
+    }
+    .servciesImg .overlay span {
+        font-size: 15px;
+        position: absolute;
+        left: 8%;
+        top: 33%;
+        font-weight: 300;
+        line-height: 27px;
+        margin: 0 0 5px;
+        color: white;
+    }
+}
+/* end servcies */
+
+/* start consulting */
+.consultingImg {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("../images/consulting/TKHive_-Digital_Transformation2.webp");
+}
+
+.consultingImg .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.65);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.consultingImg .overlay p {
+    font-size: 25px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 8%;
+    top: 15%;
+    font-weight: 300;
+    line-height: 70px;
+    margin: 0 0 5px;
+    color: white;
+}
+
+.consultingImg .overlay h1 {
+    font-size: 54px;
+    text-transform: capitalize;
+    position: absolute;
+    line-height: 59px;
+    left: 8%;
+    top: 27%;
+    font-weight: 700;
+    margin: 0 0 5px;
+    color: white;
+}
+
+.consultingImg .overlay span {
+    font-size: 18px;
+    position: absolute;
+    left: 8%;
+    top: 48%;
+    font-weight: 300;
+    line-height: 33px;
+    margin: 0 0 5px;
+    color: white;
+    max-width: 580px;
+}
+
+.consultingImg .inputs{
+    position: absolute;
+    left: 8%;
+    top: 65%;
+}
+
+.button-form{
+background: none;
+border: 1px solid var(--colorText);
+padding: 10px 20px;
+border-radius: 30px;
+color: white;
+font-weight: 600;
+width: 200px;
+margin-top: 15px;
+}
+
+.button-form:hover{
+    background-color: var(--colorText);
+    transition: .4s all ease-in-out;
+}
+
+@media (max-width:768px) {
+    .consultingImg .overlay p {
+        font-size: 16px;
+        text-transform: uppercase;
+        position: absolute;
+        left: 8%;
+        top: 0%;
+        font-weight: 400;
+        line-height: 240px;
+        margin: 0 0 5px;
+        color: white;
+    }
+    .consultingImg .overlay h1 {
+        font-size: 30px;
+        text-transform: capitalize;
+        position: absolute;
+        left: 8%;
+        top: 22%;
+        line-height: 42px;
+        font-weight: 700;
+        margin: 0 0 5px;
+        color: white;
+    }
+    .consultingImg .overlay span {
+        font-size: 15px;
+        position: absolute;
+        left: 8%;
+        top: 36%;
+        font-weight: 300;
+        line-height: 27px;
+        margin: 0 0 5px;
+        color: white;
+    }
+    .consultingImg .inputs{
+        position: absolute;
+        left: 8%;
+        top: 50%;
+    }
+}
+/* end consulting */
+
+/* start our team */
+.ourTeamImage {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("../images/ourTeam/services_bg.webp");
+}
+
+.ourTeamImage .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.55);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 30px;
+}
+
+.ourTeamImage .textTeam {
+    font-size: 25px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 8%;
+    top: 15%;
+    font-weight: 300;
+    line-height: 70px;
+    margin: 0 0 5px;
+    color: white;
+}
+
+.ourTeamImage h1 {
+    font-size: 54px;
+    text-transform: capitalize;
+    position: absolute;
+    line-height: 59px;
+    left: 8%;
+    top: 27%;
+    font-weight: 700;
+    margin: 0 0 5px;
+    color: white;
+}
+
+.ourTeamImage span {
+    font-size: 18px;
+    position: absolute;
+    left: 8%;
+    top: 42%;
+    font-weight: 300;
+    line-height: 33px;
+    margin: 0 0 5px;
+    color: white;
+    max-width: 580px;
+}
+
+.mySwiper2{
+    margin-top: 280px;
+    min-height: 250px;   
+}
+
+.sectionImg{
+    width:110px;
+    height: 110px;
+}
+
+.sectionName{
+    color: var(--colorText);
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 500;
+}
+
+.effect1{
+    background-color: #191b26;
+}
+
+.effect2{
+    background-color: #0a0d17;
+}
+
+.swiperIcon{
+    position: absolute;
+    right: 10%;
+    top: 45%;
+}
+
+@media (max-width:768px) {
+    .ourTeamImage{
+        height: 450px !important;
+    }
+
+    .mySwiper2{
+        margin-top: 170px;   
+    }
+
+    .swiperIcon{
+        position: absolute;
+        right: 10%;
+        top: 33%;
+    }
+
+    .ourTeamImage .textTeam {
+        font-size:16px;
+        text-transform: uppercase;
+        position: absolute;
+        left: 8%;
+        top: 8%;
+        font-weight: 300;
+        line-height: 24px;
+        margin: 0 0 5px;
+        color: white;
+    }
+    
+    .ourTeamImage h1 {
+        font-size: 30px;
+        text-transform: capitalize;
+        position: absolute;
+        line-height: 42px;
+        left: 8%;
+        top: 15%;
+        font-weight: 700;
+        margin: 0 0 5px;
+        color: white;
+    }
+    
+    .ourTeamImage span {
+        font-size: 15px;
+        position: absolute;
+        left: 8%;
+        top: 23%;
+        font-weight: 400;
+        line-height: 27px;
+        margin: 0 0 5px;
+        color: white;
+        max-width: 580px;
+    }
+}
+/* end our team */
+
+/* start clients */
+.clientsImg {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("../images/clients/client_bg.webp");
+}
+
+.clientsImg .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.65);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.consultingImg .overlay .mySwiper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.imageClients{
+    border: 2px solid var(--colorText);
+    width: 120px;
+    height: 120px;
+}
+/* end clients */
+
+/* start contact us */
+.contactUs{
+    background-color:#111319;
+}
+
+.contactBackground{
+    padding: 20px 30px;
+    background-color: #191c26;
+    width: 400px;
+}
+
+.desc-contact{
+    margin-left: 30px;
+}
+
+.text-contact{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    color: white;
+}
+
+.text-address {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 70px;
+    margin: 0 0 5px;
+    color: white;
+}
+
+.text-big {
+    font-size: 54px;
+    text-transform: capitalize;
+    line-height: 59px;
+    font-weight: 700;
+    color: white;
+}
+
+.text-small {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 33px;
+    color: white;
+}
+
+@media (max-width:768px) {
+    .contactBackground{
+        width: 100%;
+    }
+    .text-address {
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 300;
+        line-height: 24px;
+        color: white;
+    }
+    .text-big {
+        font-size: 30px;
+        text-transform: capitalize;
+        line-height: 42px;
+        font-weight: 700;
+        color: white;
+    }
+    .text-small {
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 27px;
+        color: white;
+    }
+}
+/* end contact us */
+
+/* start footer */
+.footer-image {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("../images/footer/TKHive_footer.webp");
+}
+
+.footer-image .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.55);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 30px;
+}
+
+.text-footer{
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 27px;
+    text-transform: capitalize;
+}
+
+@media (max-width:768px) {
+    .footer-image{
+        height: 500px !important;
+        text-align: center;
+    }
+    .iconss{
+        text-align: center;
+    }
+}
+/* end footer */
