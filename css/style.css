@@ -824,6 +824,8 @@ color: #212529;
     .servciesImg .overlay .cardServices{
         position: absolute;
         top: 18%;
+        left: 5%;
+        right: 5%;
     }
 }
 /* end servcies */
@@ -945,8 +947,9 @@ margin-top: 15px;
     }
     .consultingImg .inputs{
         position: absolute;
-        left: 8%;
         top: 50%;
+        left: 8%;
+        right: 8%;
     }
 }
 /* end consulting */
