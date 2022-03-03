@@ -1361,6 +1361,9 @@ margin-top: 15px;
 /* end footer */
 
 /* social mobile */
+.social-icon{
+    padding-right: 0px !important;
+}
 @media (min-width:991px) {
     .social-icon{
         display:none !important;
