@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Description" content="Enter your description here" />
-    <link rel="icon" href="/images/logo.png" type="image/x-icon" />
-    <meta property="og:image" content="/images/logo.png" />
+    <link rel="icon" href="./images/HORIZON-01.png" type="image/x-icon" />
+    <meta property="og:image" content="./images/HORIZON-01.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -21,8 +21,8 @@
 <body>
 
     <!-- start preloader -->
-    <div class="preloaders">
-        <div class="loaders"></div>
+    <div class="loading-overlay">
+        <img class="image-load spinner-grow " src="./images/HORIZON-01.png" alt="logo" loading="lazy">
     </div>
     <!-- end preloader -->
 
@@ -34,14 +34,12 @@
     <nav class="navbar navbar-expand-sm shadow-sm bg-white sticky-top m-0 p-1 ">
         <div class="container">
             <i class="fas fa-bars  fa-2x mt-2 mr-3" data-bs-toggle="offcanvas" data-bs-target="#demo"></i>
-            <a href="./index.html"> <img class="logo-navbar"
-                    src="https://tkhive.com/wp-content/uploads/2021/07/tk-01.svg" width="110" height="60"
+            <a href="./index.html"> <img class="logo-navbar" src="./images/HORIZON-01.png" width="80" height="70"
                     alt="image logo" loading="lazy"> </a>
             <div class="offcanvas offcanvas-start" id="demo">
                 <div class="offcanvas-header">
-                    <h1 class="offcanvas-title"><a href="./index.html"> <img
-                                src="https://tkhive.com/wp-content/uploads/2021/07/tk-01.svg" width="110" height="60"
-                                alt="image menu" loading="lazy"></a></h1>
+                    <h1 class="offcanvas-title"><a href="./index.html"> <img src="./images/HORIZON-01.png" width="80"
+                                height="60" alt="image menu" loading="lazy"></a></h1>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
                 </div>
                 <div class="offcanvas-body col justify-content-md-between">
@@ -71,6 +69,31 @@
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
+
+                    <!-- social icon -->
+                    <ul class="d-flex social-icon">
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-whatsapp m-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-f m-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-instagram m-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-linkedin-in m-2"></i>
+                            </a>
+                        </li>
+                    </ul>
+
                 </div>
             </div>
         </div>
@@ -119,43 +142,47 @@
 
     <!-- start services -->
     <div class="servcies" id="services">
-        <div class="servciesImg" style="height: 650px;">
+        <div class="servciesImg" style="height: 550px;">
             <div class="overlay">
                 <div class="wrapper">
                     <p class="servicesText">our servcies</p>
                     <h1>your digital partner.</h1>
                     <span>We help your business to scale and transform through our services.</span>
-                    <div class="row">
-                        <div class="col-12 col-md-3">
+                    <div class="row cardServices">
+                        <div class="col-12 col-md-3 cartEdit">
                             <div class="section text-center effect1 p-2" style="box-shadow: 0px 0px 8px 2px #000000;">
                                 <img class="sectionImg" src="./images/services/tkhiveee-09.svg" alt="team image"
                                     loading="lazy">
                                 <p class="m-0 p-0 mt-4 servicesName">business consultation</p>
-                                <p class="mt-5 linkModal">Read More</p>
+                                <p class="mt-5 linkModal" data-bs-toggle="modal" data-bs-target="#exampleModal-1"
+                                    data-bs-whatever="@mdo">Read More</p>
                             </div>
                         </div>
-                        <div class="col-12 col-md-3">
+                        <div class="col-12 col-md-3 cartEdit">
                             <div class="section text-center effect2 p-2" style="box-shadow: 0px 0px 8px 2px #000000;">
                                 <img class="sectionImg" src="./images/services/tkhiveee-icons-11.svg" alt="team image"
                                     loading="lazy">
-                                <p class="m-0 p-0 mt-4 servicesName">multimedia</p>
-                                <p class="mt-5 linkModal">Read More</p>
+                                <p class="m-0 p-0 mt-4 servicesName">Digital Marketing</p>
+                                <p class="mt-5 linkModal" data-bs-toggle="modal" data-bs-target="#exampleModal-2"
+                                    data-bs-whatever="@mdo">Read More</p>
                             </div>
                         </div>
-                        <div class="col-12 col-md-3">
+                        <div class="col-12 col-md-3 cartEdit">
                             <div class="section text-center effect1 p-2" style="box-shadow: 0px 0px 8px 2px #000000;">
                                 <img class="sectionImg" src="./images/services/tkhiveee-icons-12.svg" alt="team image"
                                     loading="lazy">
-                                <p class="m-0 p-0 mt-4 servicesName">digital transformation</p>
-                                <p class="mt-5 linkModal">Read More</p>
+                                <p class="m-0 p-0 mt-4 servicesName">Multimedia</p>
+                                <p class="mt-5 linkModal" data-bs-toggle="modal" data-bs-target="#exampleModal-3"
+                                    data-bs-whatever="@mdo">Read More</p>
                             </div>
                         </div>
-                        <div class="col-12 col-md-3">
+                        <div class="col-12 col-md-3 cartEdit">
                             <div class="section text-center effect2 p-2" style="box-shadow: 0px 0px 8px 2px #000000;">
                                 <img class="sectionImg" src="./images/services/icon6.svg" alt="team image"
                                     loading="lazy">
-                                <p class="m-0 p-0 mt-4 servicesName">Ahmed Serag</p>
-                                <p class="mt-5 linkModal">Read More</p>
+                                <p class="m-0 p-0 mt-4 servicesName">Digital Transformation</p>
+                                <p class="mt-5 linkModal" data-bs-toggle="modal" data-bs-target="#exampleModal-4"
+                                    data-bs-whatever="@mdo">Read More</p>
                             </div>
                         </div>
                     </div>
@@ -456,13 +483,29 @@
                         <!-- first col -->
                         <div class="col-12 col-md-3">
                             <div class="dataFooter">
-                                <img width="120" height="50"
-                                    src="https://tkhive.com/wp-content/uploads/2021/07/tk-01.svg" alt="logo footer">
-                                <div class="d-flex mx-auto mx-md-0 mt-3">
-                                    <img class="m-2" src="/images/footer/facebook (1).png" alt="facebook logo">
-                                    <img class="m-2" src="/images/footer/instagram (1).png" alt="instgram logo">
-                                    <img class="m-2" src="/images/footer/whatsapp (1).png" alt="whats app logo">
-                                </div>
+                                <img width="80" height="80" src="./images/HORIZON-01.png" alt="logo footer">
+                                <ul class="d-flex icon-footer mt-2">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-whatsapp m-2"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f m-2"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-instagram m-2"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-linkedin-in m-2"></i>
+                                        </a>
+                                    </li>
+                                </ul>
                                 <p class="mt-2 text-white">Copyright © <a href="https://paymac.net/"
                                         target="_blank">paymac.net</a></p>
                             </div>
@@ -534,8 +577,9 @@
                                         aria-labelledby="nav-featured-tab">
                                         <div class="row">
                                             <div class="col-12 col-md-6">
-                                                <img class="imgModalAbout" src="./images/about/Who_we_are-768x384-1.webp"
-                                                    alt="image about" loading="lazy">
+                                                <img class="imgModalAbout"
+                                                    src="./images/about/Who_we_are-768x384-1.webp" alt="image about"
+                                                    loading="lazy">
                                             </div>
                                             <div class="col-12 col-md-6">
                                                 <p class="textModal">
@@ -627,6 +671,192 @@
 
                                 </div>
                             </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="border-0 fw-bold bg-white pe-3 ps-3" data-bs-dismiss="modal"
+                        aria-label="Close">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- start modal services 1 -->
+    <div class="modal fade" id="exampleModal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Business Consultation</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="boxServices mx-auto d-block">
+                        <img src="/images/services/bs-1024x640-1.webp" alt="Business Consultation" class="image"
+                            loading="lazy">
+                        <div class="overlay">
+                            <div class="text">it’s the little details that are vital, little things make big things
+                                happen
+                                We are here to take your business to the next level.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="border-0 fw-bold bg-white pe-3 ps-3" data-bs-dismiss="modal"
+                        aria-label="Close">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- start modal services 2 -->
+    <div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Digital Marketing</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <p class="text-center text-black m-0 p-0 fs-6">Social Media Marketing</p>
+                            <div class="boxServices mb-3 mt-2">
+                                <img src="/images/services/social.webp" alt="Business Consultation" class="image"
+                                    loading="lazy">
+                                <div class="overlay">
+                                    <div class="text">We plan, implement, and deliver social media marketing strategies
+                                        for businesses.
+                                        • Positive impacts on branding
+                                        • Well-written content attracts more audience
+                                        • Stunning social media design</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <p class="text-center text-black m-0 p-0 fs-6">Content-Marketing</p>
+                            <div class="boxServices mb-3 mt-2">
+                                <img src="/images/services/content-marketing-1024x682-1.webp"
+                                    alt="Business Consultation" class="image" loading="lazy">
+                                <div class="overlay">
+                                    <div class="text">Content is an excellent way to reach out to your target market,
+                                        but in order to be a success and resonate with your audience it needs guidance
+                                        and direction.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <p class="text-center text-black m-0 p-0 fs-6">SEO</p>
+                            <div class="boxServices mb-3 mt-2">
+                                <img src="/images/services/seo1-1024x576.webp" alt="Business Consultation" class="image"
+                                    loading="lazy">
+                                <div class="overlay">
+                                    <div class="text">Maximize your site’s organic search potential with a data-driven
+                                        SEO strategy that will deliver a return on investment.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <p class="text-center text-black m-0 p-0 fs-6">Google-Ads</p>
+                            <div class="boxServices mb-3 mt-2">
+                                <img src="/images/services/ads-1024x906-1.webp" alt="Business Consultation"
+                                    class="image" loading="lazy">
+                                <div class="overlay">
+                                    <div class="text"> Increase Your Leads & Sales Immediately
+                                        64.6% of consumers click on Google Ads when they are looking for a service or
+                                        product online.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <p class="text-center text-black m-0 p-0 fs-6">PPC</p>
+                            <div class="boxServices mb-3 mt-2">
+                                <img src="/images/services/ppc6-1024x630-1.webp" alt="Business Consultation"
+                                    class="image" loading="lazy">
+                                <div class="overlay">
+                                    <div class="text">
+                                        Increase Your Leads & Sales Immediately
+                                        64.6% of consumers click on Google Ads when they are looking for a service or
+                                        product online.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <p class="text-center text-black m-0 p-0 fs-6">CRO</p>
+                            <div class="boxServices mb-3 mt-2">
+                                <img src="/images/services/cro.webp" alt="Business Consultation" class="image"
+                                    loading="lazy">
+                                <div class="overlay">
+                                    <div class="text">Our digital team help clients optimize user journeys on their
+                                        website through CRO.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="border-0 fw-bold bg-white pe-3 ps-3" data-bs-dismiss="modal"
+                        aria-label="Close">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- start modal services 3 -->
+    <div class="modal fade" id="exampleModal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Multimedia</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="boxServices mx-auto d-block">
+                        <img src="/images/services/content-marketing-1024x682-1.webp" alt="Business Consultation"
+                            class="image" loading="lazy">
+                        <div class="overlay">
+                            <div class="text">Graphic design.
+                                Digital design.
+                                Packaging design.
+                                Digital printing.
+                                Photography.
+                                Video shooting.
+                                2d & 3d Motion graphic.
+                                Animation video.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="border-0 fw-bold bg-white pe-3 ps-3" data-bs-dismiss="modal"
+                        aria-label="Close">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- start modal services 4 -->
+    <div class="modal fade" id="exampleModal-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Digital Transformation</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="boxServices mx-auto d-block">
+                        <img src="/images/services/content-marketing-1024x682-1.webp" alt="Business Consultation"
+                            class="image" loading="lazy">
+                        <div class="overlay">
+                            <div class="text">Digitalize your business Through : IT infrastructure solution Development services</div>
                         </div>
                     </div>
                 </div>

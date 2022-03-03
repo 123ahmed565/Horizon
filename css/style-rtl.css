@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@200;300;400;500;600;700&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400;500;700;900&family=Saira:wght@300;400;500;600;700;800;900&display=swap');
 
 :root{
-    --primary:#13202e;
+    --primary:#12102f;
     --colorText:#ec8c1e;
     --far_bars:white;
     --icon:#ec8c1e;
@@ -66,7 +66,7 @@ a:hover {
 }
 
 ::-webkit-scrollbar-thumb{
-    background:linear-gradient(var(--primary),#3ab7e9);
+    background:linear-gradient(var(--primary),var(--colorText));
     border-radius: 8px;
 }
 
@@ -232,75 +232,42 @@ input[type=submit]:hover {
 }
 /* end global features */
 
-/* preloader*/
-.preloaders {
+/* start preloader */
+.loading-overlay {
     position: fixed;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
     z-index: 99999;
-    background-color: black;
-    width: 100%;
-    height: 100%;
+    background-color: var(--primary);
 }
-.preloaders .loaders {
-    border: 0px solid transparent;
+.loading-overlay .image-load{
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-}
-
-.loaders::before {
-    -webkit-animation-delay: 0.5s;
-            animation-delay: 0.5s;
-}
-
-.loaders:before,
-.loaders:after {
-    content: "";
-    border: 10px solid #3ab7e9;
-    border-radius: 50%;
-    width: inherit;
-    height: inherit;
-    position: absolute;
-    top: 0;
-    left: 0;
-    -webkit-animation: loader 2s linear infinite;
-            animation: loader 2s linear infinite;
-    opacity: 0;
-}
-
-@-webkit-keyframes loader {
-    0% {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    opacity: 0;
-    }
-    50% {
+    transform: translate(-50%,-50%);
     opacity: 1;
-    }
-    100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 0;
-    }
+    animation-name: lds-heart;
+    animation-iteration-count: infinite;
+    background-color: var(--primary);
 }
 
-@keyframes loader {
-    0% {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    opacity: 0;
-    }
-    50% {
-    opacity: 1;
-    }
-    100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 0;
+@media (max-width:768px) {
+    .loading-overlay .image-load{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        opacity: 1;
+        animation-name: lds-heart;
+        animation-iteration-count: infinite
     }
 }
 /* end preloader */
@@ -346,7 +313,7 @@ input[type=submit]:hover {
 }
 
 .offcanvas {
-    width: 50% !important;
+    width: 70% !important;
 }
 
 .nav-item .nav-link{
@@ -369,7 +336,7 @@ input[type=submit]:hover {
 }
 
 .line{
-    border-bottom:3px solid #3ab7e9;
+    border-bottom:3px solid var(--colorText);
     white-space: nowrap;
     width: 100%;
 }
@@ -395,8 +362,8 @@ input[type=submit]:hover {
         color: white !important;
     }
     .logo-navbar{
-        height: 50px;
-        width: 110px;
+        height: 60px;
+        width: 80px;
     }
     .icons i{
         color: black !important;
@@ -591,8 +558,8 @@ transition: .4s all ease-in;
 }
 
 .imgModalAbout{
-width: 530px;
-height: 320px;
+    width: 430px;
+    height: 292px;
 }
 
 .textModal{
@@ -718,7 +685,7 @@ color: #212529;
     text-transform: uppercase;
     position: absolute;
     right: 8%;
-    top: 15%;
+    top: 5%;
     font-weight: 300;
     line-height: 70px;
     margin: 0 0 5px;
@@ -731,7 +698,7 @@ color: #212529;
     position: absolute;
     line-height: 59px;
     right: 8%;
-    top: 27%;
+    top: 15%;
     font-weight: 700;
     margin: 0 0 5px;
     color: white;
@@ -740,17 +707,12 @@ color: #212529;
     font-size: 18px;
     position: absolute;
     right: 8%;
-    top: 39%;
+    top: 25%;
     font-weight: 300;
     line-height: 33px;
     margin: 0 0 5px;
     color: white;
     max-width: 580px;
-}
-
-.servciesImg .section{
-    margin-top: 300px;
-    height: 300px;
 }
 
 .servicesName{
@@ -769,15 +731,70 @@ color: #212529;
     cursor: pointer;
 }
 
+.boxServices {
+    position: relative;
+}
+
+.cartEdit{
+    margin-top: 200px !important;
+}
+
+.boxServices .image {
+    display: block;
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.boxServices .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 250px;
+    height: 200px;
+    margin: auto;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+    border-radius: 10px;
+}
+
+.boxServices:hover .overlay {
+    opacity: 1;
+}
+
+.boxServices .text {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    right: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
 @media (max-width:768px) {
+    .servciesImg{
+        height: 1438px !important;
+    }
+    .cartEdit{
+        margin-top: 20px !important;
+    }
     .servciesImg .overlay .servicesText {
         font-size: 16px;
         text-transform: uppercase;
         position: absolute;
         right: 8%;
-        top: 0%;
+        top: 5%;
         font-weight: 400;
-        line-height: 240px;
+        line-height: 24px;
         margin: 0 0 5px;
         color: white;
     }
@@ -786,7 +803,7 @@ color: #212529;
         text-transform: capitalize;
         position: absolute;
         right: 8%;
-        top: 25%;
+        top: 8%;
         line-height: 42px;
         font-weight: 700;
         margin: 0 0 5px;
@@ -796,11 +813,16 @@ color: #212529;
         font-size: 15px;
         position: absolute;
         right: 8%;
-        top: 33%;
+        top: 13%;
         font-weight: 300;
         line-height: 27px;
         margin: 0 0 5px;
         color: white;
+    }
+
+    .servciesImg .overlay .cardServices{
+        position: absolute;
+        top: 18%;
     }
 }
 /* end servcies */
@@ -1310,6 +1332,16 @@ margin-top: 15px;
     text-transform: capitalize;
 }
 
+.icon-footer{
+    padding-left: 0px !important;
+}
+
+.icon-footer i:hover{
+    border-radius: 50%;
+    color:white !important;
+    transition: .3s all ease;
+}
+
 @media (max-width:768px) {
     .footer-image{
         height: 500px !important;
@@ -1318,5 +1350,16 @@ margin-top: 15px;
     .iconss{
         text-align: center;
     }
+    .icon-footer{
+        justify-content: center;
+        padding-left: 0px !important;
+    }
 }
 /* end footer */
+
+/* social mobile */
+@media (min-width:991px) {
+    .social-icon{
+        display:none !important;
+    }
+}

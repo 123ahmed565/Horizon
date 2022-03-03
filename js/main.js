@@ -77,5 +77,5 @@ document.addEventListener("scroll", (e) => {
 
 // preloader
 window.onload = function () {
-  document.querySelector(".preloaders").style.display = "none";
-};
+    document.querySelector('.loading-overlay ').style.display = "none";
+  };
