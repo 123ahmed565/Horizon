@@ -308,8 +308,10 @@ input[type=submit]:hover {
 .fa-bars{
     color: var(--far_bars);
 }
+
 .navbar{
     background-color: var(--primary)!important;
+    border-bottom: 3px solid var(--colorText);
 }
 
 .offcanvas {

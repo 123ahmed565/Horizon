@@ -310,6 +310,7 @@ input[type=submit]:hover {
 }
 .navbar{
     background-color: var(--primary)!important;
+    border-bottom: 3px solid var(--colorText);
 }
 
 .offcanvas {
