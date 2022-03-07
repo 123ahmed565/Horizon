@@ -567,7 +567,7 @@ transition: .4s all ease-in;
 .textModal{
 font-weight: 400;
 font-size: 16px;
-line-height: 16px;
+line-height: 24px;
 color: #212529;
 }
 
@@ -722,6 +722,11 @@ color: #212529;
     line-height: 26px;
     color: #a9afc3;
     font-weight: 500;
+}
+
+.imgModalServcies{
+    width: 100%;
+    height: 300px;
 }
 
 .linkModal{
