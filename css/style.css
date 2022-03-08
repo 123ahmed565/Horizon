@@ -342,6 +342,40 @@ input[type=submit]:hover {
     width: 100%;
 }
 
+.dropbtn{
+    border: none;
+    background: none;
+    color: white !important;
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 17px;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+.dropbtn:hover{
+    color: var(--colorText) !important;
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 17px;
+    padding-bottom: 0px;
+    border-bottom: 2px solid var(--colorText);
+    transition: .3s all ease-in-out;
+}
+
+.dropdown-menu{
+background-color: var(--primary);
+}
+
+.dropdown-menu .dropdown-item{
+    color: white;
+}
+
+.dropdown-menu .dropdown-item:hover{
+    background-color: var(--primary) !important;
+    color: var(--colorText) !important;
+}
+
 @media (min-width:768px) {
     .fa-bars{
         display: none;
