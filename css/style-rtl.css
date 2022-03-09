@@ -429,7 +429,6 @@ background-color: var(--primary);
     position: relative;
     background-size: cover;
     background-position: 50% 50%;
-    background-image: url("../images/slider/slider_bg.webp");
 }
 
 .big-image .overlay {
@@ -523,7 +522,6 @@ background-color: var(--primary);
     position: relative;
     background-size: cover;
     background-position: 50% 50%;
-    background-image: url("../images/about/TKHive_digital-transformation2.webp");
 }
 
 .aboutImg .overlay {
@@ -699,7 +697,6 @@ color: #212529;
     position: relative;
     background-size: cover;
     background-position: 50% 50%;
-    background-image: url("../images/services/services_bg.webp");
 }
 
 .servciesImg .overlay {
@@ -877,7 +874,6 @@ color: #212529;
     position: relative;
     background-size: cover;
     background-position: 50% 50%;
-    background-image: url("../images/consulting/TKHive_-Digital_Transformation2.webp");
 }
 
 .consultingImg .overlay {
@@ -1001,7 +997,6 @@ margin-top: 15px;
     position: relative;
     background-size: cover;
     background-position: 50% 50%;
-    background-image: url("../images/whyUs/t1-min-scaled-1.webp");
 }
 
 .whyUsImage .overlay {
@@ -1098,7 +1093,6 @@ margin-top: 15px;
     position: relative;
     background-size: cover;
     background-position: 50% 50%;
-    background-image: url("../images/ourTeam/services_bg.webp");
 }
 
 .ourTeamImage .overlay {
@@ -1242,7 +1236,6 @@ margin-top: 15px;
     position: relative;
     background-size: cover;
     background-position: 50% 50%;
-    background-image: url("../images/clients/client_bg.webp");
 }
 
 .clientsImg .overlay {
@@ -1352,7 +1345,6 @@ margin-top: 15px;
     position: relative;
     background-size: cover;
     background-position: 50% 50%;
-    background-image: url("../images/footer/TKHive_footer.webp");
 }
 
 .footer-image .overlay {
