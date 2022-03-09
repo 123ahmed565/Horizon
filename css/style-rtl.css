@@ -445,7 +445,7 @@ background-color: var(--primary);
     flex-direction: column;
 }
 
-.big-image .overlay p {
+.big-image .overlay .titleSlider {
     font-size: 25px;
     text-transform: uppercase;
     position: absolute;
@@ -457,7 +457,7 @@ background-color: var(--primary);
     color: white;
 }
 
-.big-image .overlay h1 {
+.big-image .overlay .subTitleSlider {
     font-size: 70px;
     text-transform: capitalize;
     position: absolute;
@@ -468,7 +468,7 @@ background-color: var(--primary);
     color: white;
 }
 
-.big-image .overlay span {
+.big-image .overlay .smallTitleSlider {
     font-size: 22px;
     position: absolute;
     right: 8%;
@@ -480,7 +480,7 @@ background-color: var(--primary);
 }
 
 @media (max-width:768px) {
-    .big-image .overlay p {
+    .big-image .overlay .titleSlider {
         font-size: 16px;
         text-transform: uppercase;
         position: absolute;
@@ -491,7 +491,7 @@ background-color: var(--primary);
         margin: 0 0 5px;
         color: white;
     }
-    .big-image .overlay h1 {
+    .big-image .overlay .subTitleSlider {
         font-size: 40px;
         text-transform: capitalize;
         position: absolute;
@@ -502,7 +502,7 @@ background-color: var(--primary);
         margin: 0 0 5px;
         color: white;
     }
-    .big-image .overlay span {
+    .big-image .overlay .smallTitleSlider {
         font-size: 15px;
         position: absolute;
         left: 8%;
@@ -538,7 +538,7 @@ background-color: var(--primary);
     flex-direction: column;
 }
 
-.aboutImg .overlay p {
+.aboutImg .overlay .titleAbout {
     font-size: 25px;
     text-transform: uppercase;
     position: absolute;
@@ -550,7 +550,7 @@ background-color: var(--primary);
     color: white;
 }
 
-.aboutImg .overlay h1 {
+.aboutImg .overlay .subTitleAbout {
     font-size: 70px;
     text-transform: capitalize;
     position: absolute;
@@ -561,7 +561,7 @@ background-color: var(--primary);
     color: white;
 }
 
-.aboutImg .overlay span {
+.aboutImg .overlay .smallTitleAbout {
     font-size: 18px;
     position: absolute;
     right: 8%;
@@ -639,7 +639,7 @@ color: #212529;
 }
 
 @media (max-width:768px) {
-    .aboutImg .overlay p {
+    .aboutImg .overlay .titleAbout {
         font-size: 16px;
         text-transform: uppercase;
         position: absolute;
@@ -650,7 +650,7 @@ color: #212529;
         margin: 0 0 5px;
         color: white;
     }
-    .aboutImg .overlay h1 {
+    .aboutImg .overlay .subTitleAbout {
         font-size: 30px;
         text-transform: capitalize;
         position: absolute;
@@ -661,7 +661,7 @@ color: #212529;
         margin: 0 0 5px;
         color: white;
     }
-    .aboutImg .overlay span {
+    .aboutImg .overlay .smallTitleAbout {
         font-size: 15px;
         position: absolute;
         right: 8%;
@@ -725,7 +725,7 @@ color: #212529;
     color: white;
 }
 
-.servciesImg .overlay h1 {
+.servciesImg .overlay .subTitleServcies {
     font-size: 54px;
     text-transform: capitalize;
     position: absolute;
@@ -736,7 +736,7 @@ color: #212529;
     margin: 0 0 5px;
     color: white;
 }
-.servciesImg .overlay span {
+.servciesImg .overlay .smallTitleServcies {
     font-size: 18px;
     position: absolute;
     right: 8%;
@@ -836,7 +836,7 @@ color: #212529;
         margin: 0 0 5px;
         color: white;
     }
-    .servciesImg .overlay h1 {
+    .servciesImg .overlay .subTitleServcies {
         font-size: 30px;
         text-transform: capitalize;
         position: absolute;
@@ -847,7 +847,7 @@ color: #212529;
         margin: 0 0 5px;
         color: white;
     }
-    .servciesImg .overlay span {
+    .servciesImg .overlay .smallTitleServcies {
         font-size: 15px;
         position: absolute;
         right: 8%;
@@ -890,7 +890,7 @@ color: #212529;
     flex-direction: column;
 }
 
-.consultingImg .overlay p {
+.consultingImg .overlay .titleConsulting {
     font-size: 25px;
     text-transform: uppercase;
     position: absolute;
@@ -902,7 +902,7 @@ color: #212529;
     color: white;
 }
 
-.consultingImg .overlay h1 {
+.consultingImg .overlay .subTitleConsulting {
     font-size: 54px;
     text-transform: capitalize;
     position: absolute;
@@ -914,7 +914,7 @@ color: #212529;
     color: white;
 }
 
-.consultingImg .overlay span {
+.consultingImg .overlay .smallTitleConsulting {
     font-size: 18px;
     position: absolute;
     right: 8%;
@@ -949,7 +949,7 @@ margin-top: 15px;
 }
 
 @media (max-width:768px) {
-    .consultingImg .overlay p {
+    .consultingImg .overlay .titleConsulting {
         font-size: 16px;
         text-transform: uppercase;
         position: absolute;
@@ -960,7 +960,7 @@ margin-top: 15px;
         margin: 0 0 5px;
         color: white;
     }
-    .consultingImg .overlay h1 {
+    .consultingImg .overlay .subTitleConsulting {
         font-size: 30px;
         text-transform: capitalize;
         position: absolute;
@@ -971,7 +971,7 @@ margin-top: 15px;
         margin: 0 0 5px;
         color: white;
     }
-    .consultingImg .overlay span {
+    .consultingImg .overlay .smallTitleConsulting {
         font-size: 15px;
         position: absolute;
         right: 8%;
@@ -1121,7 +1121,7 @@ margin-top: 15px;
     color: white;
 }
 
-.ourTeamImage h1 {
+.ourTeamImage .subTitleOurTeam {
     font-size: 54px;
     text-transform: capitalize;
     position: absolute;
@@ -1133,7 +1133,7 @@ margin-top: 15px;
     color: white;
 }
 
-.ourTeamImage span {
+.ourTeamImage .smallTitleOutTeam {
     font-size: 18px;
     position: absolute;
     right: 8%;
@@ -1203,7 +1203,7 @@ margin-top: 15px;
         color: white;
     }
     
-    .ourTeamImage h1 {
+    .ourTeamImage .subTitleOurTeam {
         font-size: 30px;
         text-transform: capitalize;
         position: absolute;
@@ -1215,7 +1215,7 @@ margin-top: 15px;
         color: white;
     }
     
-    .ourTeamImage span {
+    .ourTeamImage .smallTitleOutTeam {
         font-size: 15px;
         position: absolute;
         right: 8%;
