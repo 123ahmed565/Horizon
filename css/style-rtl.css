@@ -1411,3 +1411,9 @@ margin-top: 15px;
         display:none !important;
     }
 }
+
+
+/* modal close */
+.btn-close{
+    margin-left: 0 !important;
+}
