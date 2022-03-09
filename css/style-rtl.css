@@ -571,6 +571,9 @@ background-color: var(--primary);
     margin: 0 0 5px;
     color: white;
     max-width: 580px;
+    min-height: 300px;
+    max-height: 20px;
+    overflow: hidden;
 }
 
 .aboutImg .modalRead{
@@ -746,6 +749,9 @@ color: #212529;
     margin: 0 0 5px;
     color: white;
     max-width: 580px;
+    min-height: 67px;
+    max-height: 20px;
+    overflow: hidden;
 }
 
 .servicesName{
@@ -895,7 +901,7 @@ color: #212529;
     text-transform: uppercase;
     position: absolute;
     right: 8%;
-    top: 15%;
+    top: 10%;
     font-weight: 300;
     line-height: 70px;
     margin: 0 0 5px;
@@ -908,7 +914,7 @@ color: #212529;
     position: absolute;
     line-height: 59px;
     right: 8%;
-    top: 27%;
+    top: 19%;
     font-weight: 700;
     margin: 0 0 5px;
     color: white;
@@ -918,18 +924,21 @@ color: #212529;
     font-size: 18px;
     position: absolute;
     right: 8%;
-    top: 48%;
+    top: 36%;
     font-weight: 300;
     line-height: 33px;
     margin: 0 0 5px;
     color: white;
     max-width: 580px;
+    min-height: 80px;
+    max-height: 20px;
+    overflow: hidden;
 }
 
 .consultingImg .inputs{
     position: absolute;
     right: 8%;
-    top: 65%;
+    top: 49%;
 }
 
 .button-form{
