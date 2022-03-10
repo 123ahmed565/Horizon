@@ -722,9 +722,15 @@ color: #212529;
     font-weight: 500;
 }
 
+.sectionImgg{
+    width: 100%;
+    height: 180px;
+    border-radius: 3px;
+}
+
 .imgModalServcies{
     width: 100%;
-    height: 190px;
+    height: 215px;
 }
 
 .linkModal{
@@ -789,6 +795,11 @@ color: #212529;
     .servciesImg{
         height: 1438px !important;
     }
+    .sectionImgg{
+        width: 100%;
+        height: 210px;
+        border-radius: 3px;
+    }
     .cartEdit{
         margin-top: 20px !important;
     }
@@ -802,6 +813,10 @@ color: #212529;
         line-height: 24px;
         margin: 0 0 5px;
         color: white;
+    }
+    .imgModalServcies{
+        width: 100%;
+        height: 190px;
     }
     .servciesImg .overlay .subTitleServcies {
         font-size: 30px;
@@ -1122,9 +1137,9 @@ margin-top: 15px;
 }
 
 .sectionImg{
-    width: 100%;
-    height: 160px;
-    border-radius: 3px;
+    width:110px;
+    height: 110px;
+    /* border-radius: 3px; */
 }
 
 .sectionName{
