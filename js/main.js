@@ -63,19 +63,60 @@ const upperbar = document.querySelector(".upperbar");
 scrollBtn.style.display = "none";
 
 scrollBtn.addEventListener("click", () => {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 });
 
 document.addEventListener("scroll", (e) => {
-  if (document.documentElement.scrollTop <= 100) {
+    if (document.documentElement.scrollTop <= 100) {
     scrollBtn.style.display = "none";
-  } else {
+    } else {
     scrollBtn.style.display = "block";
-  }
+    }
 });
 
 // preloader
 window.onload = function () {
     document.querySelector('.loading-overlay ').style.display = "none";
-  };
+};
+
+// scroll number counter animation
+$(document).on('scroll', function() {
+    if ($(this).scrollTop() >= $('#whyUs').position().top) {
+        $.fn.jQuerySimpleCounter = function( options ) {
+            var settings = $.extend({
+                start:  0,
+                end:    100,
+                easing: 'swing',
+                duration: 400,
+                complete: ''
+            }, options );
+        
+            var thisElement = $(this);
+        
+            $({count: settings.start}).animate({count: settings.end}, {
+                duration: settings.duration,
+                easing: settings.easing,
+                step: function() {
+                    var mathCount = Math.ceil(this.count);
+                    thisElement.text(mathCount);
+                },
+                complete: settings.complete
+            });
+        };
+        
+        
+        $('#number1').jQuerySimpleCounter({end: 12,duration: 3000});
+        $('#number2').jQuerySimpleCounter({end: 55,duration: 3000});
+        $('#number3').jQuerySimpleCounter({end: 359,duration: 3000});
+        $('#number4').jQuerySimpleCounter({end: 246,duration: 3000});
+    }
+})
+
+
+
+
+
+
+
+
