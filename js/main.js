@@ -56,6 +56,38 @@ var swiper = new Swiper(".mySwiper2", {
     },
 });
 
+// swiper servcies
+var swiper = new Swiper(".mySwiper3", {
+    slidesPerView: 5,
+    spaceBetween: 30,
+    freeMode: true,
+    loop:false,
+    pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    },
+    navigation: {
+        nextEl: '.fa-chevron-right',
+        prevEl: '.fa-chevron-left',
+
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            freeMode:false,
+        },
+        600: {
+            slidesPerView: 3.5,
+            spaceBetween: 20,
+        },
+        1000: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        },
+    },
+});
+
 // to top
 const scrollBtn = document.querySelector(".scroll-to-top");
 const upperbar = document.querySelector(".upperbar");
