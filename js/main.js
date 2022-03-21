@@ -60,7 +60,7 @@ var swiper = new Swiper(".mySwiper2", {
 var swiper = new Swiper(".mySwiper3", {
     slidesPerView: 5,
     spaceBetween: 30,
-    freeMode: true,
+    freeMode: false,
     loop:false,
     pagination: {
     el: ".swiper-pagination",

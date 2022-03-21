@@ -126,7 +126,7 @@ input[type=text], input[type=email],input[type=number],input[type=password],inpu
     border-right-style: hidden;
     border-left-style: hidden;
     outline: none;
-    color: #b4b4b5;
+    color: white;
     font-size: 16px;
 }
 
@@ -205,7 +205,7 @@ input[type=submit]:hover {
     bottom: 0;
     right: 0;
     z-index: 99999;
-    background-color: var(--primary);
+    background-color: #010016;
 }
 .loading-overlay .image-load{
     width: 250px;
@@ -214,11 +214,12 @@ input[type=submit]:hover {
     position: absolute;
     top: 50%;
     left: 50%;
+    object-fit: contain;
     transform: translate(-50%,-50%);
     opacity: 1;
     animation-name: lds-heart;
     animation-iteration-count: infinite;
-    background-color: var(--primary);
+    background-color: #010016;
 }
 
 @media (max-width:768px) {
@@ -347,7 +348,7 @@ background-color: var(--primary);
         display: none;
     }
     .navbar-nav{
-        margin-left: 14%;
+        margin-left: 8%;
     }
     .navbar-expand-sm .navbar-nav .nav-link{
         color: white;
@@ -1019,6 +1020,7 @@ margin-top: 15px;
 .subCart{
     background-color: #0b0e17;
     width: 250px;
+    height: 162px;
     padding: 30px 20px;
 }
 
@@ -1283,7 +1285,7 @@ margin-top: 15px;
 
 .contactBackground{
     padding: 20px 30px;
-    background-color: #191c26;
+    background-color: #010016;
     width: 400px;
 }
 
